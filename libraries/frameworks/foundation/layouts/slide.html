@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="{{slide.class}}" id="{{slide.id}}">
+    {{{ slide.html }}}
+    
+    {{# slide.blocks }}
+    
+      <div class="{{class}}" id="{{id}}">
+      
+         {{{ header }}}
+      
+        {{#div}}<div class="{{{ . }}}">{{/div}}
+        
+          {{{ content }}}
+          
+        {{#div}}</div>{{/div}}
+      </div>
+   
+    {{/ slide.blocks }}
+  </div>
+</div>
